@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Chuck Norris Jokes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        .card{
+          border-radius: 25px;
+          box-shadow: black;
+        }
+    </style>
 </head>
 <body>
-    <h1>Chuck Norris Jokes</h1>
-    <p th:text="${joke}" > Show Jokes Here... </p>
+<div class="container">
+    <div class="card" style="width: 18rem; margin-top: 15vh; margin-left: 55vh">
+        <img src="https://cdn1.iconfinder.com/data/icons/group-of-friends-reactions-to-internet-content-onl/337/laptop-reaction-group-9-1024.png"
+             class="card-img-top" alt="Joke">
+        <div class="card-body">
+            <h4 class="card-title">Chuck Norris Jokes</h4>
+            <p th:text="${joke}" class="card-text"> Show Jokes Here... </p>
+            <a href="" class="btn btn-primary">Reload</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
